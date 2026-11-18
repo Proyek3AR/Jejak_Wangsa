@@ -1,0 +1,353 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://Home.gd" id="1_home_gd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card_white"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.92, 0.89, 0.84, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_candi_box"]
+bg_color = Color(0.91, 0.965, 0.957, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_coral"]
+bg_color = Color(0.98, 0.49, 0.38, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 16.0
+content_margin_top = 14.0
+content_margin_right = 16.0
+content_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mint_card"]
+bg_color = Color(0.349, 0.788, 0.729, 0.18)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.349, 0.788, 0.729, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_coral_card"]
+bg_color = Color(0.98, 0.49, 0.38, 0.16)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.98, 0.49, 0.38, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amber_card"]
+bg_color = Color(0.969, 0.722, 0.267, 0.18)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.722, 0.267, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lavender_card"]
+bg_color = Color(0.541, 0.561, 0.973, 0.18)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.541, 0.561, 0.973, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fact_card"]
+bg_color = Color(0.91, 0.965, 0.957, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+content_margin_left = 16.0
+content_margin_top = 14.0
+content_margin_right = 16.0
+content_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bottom_nav"]
+bg_color = Color(1, 1, 1, 1)
+border_width_top = 2
+border_color = Color(0.92, 0.89, 0.84, 1)
+content_margin_left = 12.0
+content_margin_top = 10.0
+content_margin_right = 12.0
+content_margin_bottom = 10.0
+
+[node name="Home" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_home_gd")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.992, 0.965, 0.925, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="ScrollArea" type="ScrollContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MainVBox/ScrollArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ContentVBox" type="VBoxContainer" parent="MainVBox/ScrollArea/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="HeaderBox" type="VBoxContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TitleLabel" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeaderBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 34
+text = "Jejak Wangsa"
+
+[node name="SubtitleLabel" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeaderBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.35, 0.27, 1)
+theme_override_font_sizes/font_size = 16
+text = "Eksplorasi Sejarah Jawa Barat"
+
+[node name="HeroCard" type="PanelContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card_white")
+
+[node name="HeroVBox" type="VBoxContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CandiFrame" type="PanelContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox"]
+custom_minimum_size = Vector2(0, 240)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_candi_box")
+
+[node name="CandiImage" type="TextureRect" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox/CandiFrame"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceholderLabel" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox/CandiFrame"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 0.65)
+theme_override_font_sizes/font_size = 15
+text = "Pasang gambar PNG Candi Cangkuang di node CandiImage"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeroTitle" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 24
+text = "Candi Cangkuang"
+
+[node name="HeroLoc" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.35, 0.27, 1)
+theme_override_font_sizes/font_size = 15
+text = "Leles, Garut, Jawa Barat • Abad VIII M"
+
+[node name="BtnMulaiAR" type="Button" parent="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_coral")
+theme_override_styles/hover = SubResource("StyleBoxFlat_btn_coral")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_btn_coral")
+text = "Mulai AR →"
+
+[node name="MenuTitle" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 20
+text = "Menu Eksplorasi"
+
+[node name="MenuGrid" type="GridContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 14
+columns = 2
+
+[node name="BtnModul" type="Button" parent="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid"]
+custom_minimum_size = Vector2(0, 115)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_mint_card")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mint_card")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mint_card")
+text = "Modul Materi
+5 Modul Jawa Barat"
+
+[node name="BtnKameraAR" type="Button" parent="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid"]
+custom_minimum_size = Vector2(0, 115)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_coral_card")
+theme_override_styles/hover = SubResource("StyleBoxFlat_coral_card")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_coral_card")
+text = "Kamera AR
+Pindai Candi & Prasasti"
+
+[node name="BtnPeta" type="Button" parent="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid"]
+custom_minimum_size = Vector2(0, 115)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_amber_card")
+theme_override_styles/hover = SubResource("StyleBoxFlat_amber_card")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_amber_card")
+text = "Peta & Lini Masa
+Sebaran Situs Jabar"
+
+[node name="BtnKuis" type="Button" parent="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid"]
+custom_minimum_size = Vector2(0, 115)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_lavender_card")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lavender_card")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lavender_card")
+text = "Kuis Evaluasi
+10 Soal Pemahaman"
+
+[node name="FactCard" type="PanelContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fact_card")
+
+[node name="FactVBox" type="VBoxContainer" parent="MainVBox/ScrollArea/Margin/ContentVBox/FactCard"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="FactTitle" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/FactCard/FactVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.18, 0.52, 0.48, 1)
+theme_override_font_sizes/font_size = 14
+text = "TAHUKAH KAMU?"
+
+[node name="FactBody" type="Label" parent="MainVBox/ScrollArea/Margin/ContentVBox/FactCard/FactVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+theme_override_font_sizes/font_size = 14
+text = "Prasasti Ciaruteun di Bogor memuat pahatan sepasang telapak kaki Raja Purnawarman dari Kerajaan Tarumanagara."
+autowrap_mode = 3
+
+[node name="BottomNav" type="PanelContainer" parent="MainVBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bottom_nav")
+
+[node name="NavHBox" type="HBoxContainer" parent="MainVBox/BottomNav"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="NavHome" type="Button" parent="MainVBox/BottomNav/NavHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.18, 0.52, 0.48, 1)
+text = "Home"
+flat = true
+
+[node name="NavPeta" type="Button" parent="MainVBox/BottomNav/NavHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+text = "Peta"
+flat = true
+
+[node name="NavAR" type="Button" parent="MainVBox/BottomNav/NavHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+text = "Kamera AR"
+flat = true
+
+[node name="NavPustaka" type="Button" parent="MainVBox/BottomNav/NavHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29, 0.145, 0.067, 1)
+text = "Pustaka"
+flat = true
+
+[connection signal="pressed" from="MainVBox/ScrollArea/Margin/ContentVBox/HeroCard/HeroVBox/BtnMulaiAR" to="." method="_on_btn_mulai_ar_pressed"]
+[connection signal="pressed" from="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid/BtnModul" to="." method="_on_btn_modul_pressed"]
+[connection signal="pressed" from="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid/BtnKameraAR" to="." method="_on_btn_kamera_ar_pressed"]
+[connection signal="pressed" from="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid/BtnPeta" to="." method="_on_btn_peta_pressed"]
+[connection signal="pressed" from="MainVBox/ScrollArea/Margin/ContentVBox/MenuGrid/BtnKuis" to="." method="_on_btn_kuis_pressed"]
